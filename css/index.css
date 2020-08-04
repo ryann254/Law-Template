@@ -27,7 +27,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 .nav-active {
@@ -38,6 +38,10 @@ body {
 .landing {
   margin-top: 17px;
   position: relative;
+}
+
+.landing-image {
+  width: -webkit-fill-available;
 }
 
 .landing-inner {
@@ -104,7 +108,9 @@ body {
 
 .about-us .heading,
 .our-team .heading,
-.practice-areas .heading {
+.practice-areas .heading,
+.publications .heading,
+.contact .heading {
   font-weight: bold;
   font-size: 36px;
   line-height: 47px;
@@ -112,7 +118,9 @@ body {
 
 .about-us .line,
 .our-team .line,
-.practice-areas .line {
+.practice-areas .line,
+.publications .line,
+.contact .line {
   background: var(--active-link-color);
   width: 101px;
   height: 1px;
@@ -135,7 +143,8 @@ body {
 .vision .heading,
 .mission .heading,
 .process .heading,
-.approach .heading {
+.approach .heading,
+.contact-form-2 .heading {
   font-weight: 500;
   font-size: 24px;
   line-height: 31px;
@@ -170,7 +179,11 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
+.contact .content-heading,
+.publications .view-more,
+.publications .sub-content,
 .team .content-name,
+.contact-form .button,
 .team .content-button {
   font-family: "Mulish", sans-serif;
   font-weight: bold;
@@ -179,6 +192,8 @@ body {
   color: var(--secondary-font-color);
 }
 
+.publications .name,
+.content .sub-content,
 .team .content-title {
   font-family: "Mulish", sans-serif;
   font-size: 14px;
@@ -203,6 +218,8 @@ body {
   text-transform: capitalize;
 }
 
+.publications .text,
+.content .topic,
 .stats .desc {
   font-family: "Mulish", sans-serif;
   font-size: 18px;
@@ -210,8 +227,197 @@ body {
   color: var(--primary-bg-color);
 }
 
+.team .arrow {
+  margin-top: 40%;
+}
+
 /* Practice Areas */
 .content .underline {
   height: 1px;
   background: var(--active-link-color);
+}
+
+.content .topic {
+  font-family: "EB Garamond", serif;
+  color: var(--primary-font-color);
+}
+
+.contact-form-2 .line,
+.content .line {
+  width: 46px;
+  height: 5px;
+  margin-top: 4px;
+  background: var(--active-link-color);
+  margin-left: 15px;
+}
+
+.content .sub-content {
+  color: var(--secondary-font-color);
+}
+
+.footer .footer-text,
+.contact-form-2 .text,
+.contact .topic,
+.contact-form .heading {
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 315px;
+  height: 34px;
+  background: var(--primary-bg-color);
+  border: 1px solid var(--primary-line-color);
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: auto;
+}
+
+.contact-form-2 .button,
+.contact-form .button {
+  width: 135px;
+  height: 38px;
+  background: var(--active-link-color);
+}
+
+.awards {
+  background: rgba(196, 196, 196, 0.25);
+}
+
+/* Publications */
+.publications .content {
+  position: relative;
+}
+
+.publications .text {
+  position: absolute;
+  width: 303px;
+  top: 37px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.publications .name {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--primary-bg-color);
+  z-index: 10;
+}
+
+.content .img-cover {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 315px;
+  height: 109px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.51);
+}
+
+.publications .sub-content {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.publications .name-publications {
+  font-size: 12px;
+  line-height: 13px;
+  color: var(--secondary-font-color);
+}
+
+.publications-3 {
+  margin-top: 10px;
+  margin-left: 9px;
+  height: 73px;
+}
+
+.content-1 {
+  margin-left: 23px;
+  width: 146px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.publications .view-more {
+  color: var(--active-link-color);
+}
+
+.view-more-img {
+  margin-bottom: 2px;
+}
+
+/* Contact */
+.contact {
+  background: rgba(196, 196, 196, 0.25);
+}
+
+.contact .content {
+  border: 10px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact .sub-content {
+  background: var(--primary-bg-color);
+}
+
+.contact .topic {
+  color: var(--active-link-color);
+  text-transform: uppercase;
+}
+
+.contact-form-2 {
+  background: var(--primary-font-color);
+}
+
+/* Footer */
+.footer {
+  position: relative;
+}
+
+.footer-logo,
+.footer-text,
+.footer-icons {
+  position: absolute;
+  top: 32px;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-text {
+  width: 251px;
+  top: 117px;
+  font-weight: normal;
+}
+
+.footer-icons {
+  top: 180px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: var(--active-link-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img {
+  width: -webkit-fill-available;
 }
