@@ -46,7 +46,7 @@ body {
 
 .landing-inner {
   position: absolute;
-  top: 349px;
+  top: 319px;
   width: 315px;
   left: 50%;
   transform: translateX(-50%);
@@ -231,6 +231,14 @@ body {
   margin-top: 40%;
 }
 
+.awards .arrow {
+  margin-top: 28%;
+}
+
+.team-1 {
+  width: -webkit-fill-available;
+}
+
 /* Practice Areas */
 .content .underline {
   height: 1px;
@@ -297,7 +305,7 @@ body {
 .publications .text {
   position: absolute;
   width: 303px;
-  top: 37px;
+  top: 28px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -305,8 +313,8 @@ body {
 
 .publications .name {
   position: absolute;
-  left: 15px;
-  bottom: 10px;
+  left: 5px;
+  bottom: 5px;
   font-family: "Mulish", sans-serif;
   font-weight: bold;
   font-size: 13px;
@@ -317,9 +325,9 @@ body {
 
 .content .img-cover {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 315px;
+  top: 0px;
+  left: 0px;
+  width: 310px;
   height: 109px;
   z-index: 5;
   background: rgba(0, 0, 0, 0.51);
@@ -337,16 +345,14 @@ body {
   color: var(--secondary-font-color);
 }
 
-.publications-3 {
-  margin-top: 10px;
-  margin-left: 9px;
-  height: 73px;
-}
-
 .content-1 {
-  margin-left: 23px;
+  margin-left: 25px;
   width: 146px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.content-2 {
+  margin-left: 18px;
 }
 
 .publications .view-more {
@@ -420,4 +426,245 @@ body {
 
 .footer-img {
   width: -webkit-fill-available;
+}
+
+@media all and (max-width: 320px) {
+  /* Landing Page */
+  .landing-inner {
+    top: 275px;
+  }
+
+  /* About Us */
+  .vision .content,
+  .mission .content,
+  .process .content,
+  .approach .content {
+    margin-left: 0 !important;
+    padding: 0 0 0 5px !important;
+  }
+
+  .vision .line,
+  .mission .line,
+  .process .line,
+  .approach .line {
+    left: 12.8%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 295px;
+  }
+
+  /* Publications */
+  .content .img-cover {
+    width: 309px;
+    height: 107px;
+  }
+
+  .publications .text {
+    top: 25px;
+    width: 280px;
+  }
+
+  .content-1 {
+    margin-left: 9px;
+  }
+
+  /* Footer */
+  .footer-logo {
+    top: 10px;
+  }
+
+  .footer-text {
+    top: 90px;
+  }
+
+  .footer-icons {
+    top: 140px;
+  }
+}
+
+@media all and (min-width: 375px) {
+  /* Landing Image */
+  .landing-inner {
+    top: 339px;
+  }
+
+  /* About Us */
+  .vision .content,
+  .mission .content,
+  .process .content,
+  .approach .content {
+    margin-left: 20px !important;
+  }
+
+  .vision .line,
+  .mission .line,
+  .process .line,
+  .approach .line {
+    left: 18%;
+  }
+
+  /* Practice Areas */
+  .form-group input {
+    height: 37px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 325px;
+  }
+
+  /* Publications */
+  .content-1 {
+    margin-left: 33px;
+  }
+
+  .content-2 {
+    margin-left: 18px;
+  }
+}
+
+@media all and (min-width: 411px) {
+  /* Landing Page */
+  .landing-inner {
+    width: 335px;
+    top: 380px;
+  }
+
+  /* About Us */
+  .vision .content,
+  .mission .content,
+  .process .content,
+  .approach .content {
+    margin-left: 39px !important;
+  }
+
+  .vision .line,
+  .mission .line,
+  .process .line,
+  .approach .line {
+    left: 21%;
+  }
+
+  /* Practice Areas */
+  .form-group input {
+    height: 39px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 355px;
+  }
+
+  /* Publications */
+  .content-1 {
+    margin-left: 52px;
+  }
+
+  .content-2 {
+    margin-left: 20px;
+  }
+}
+
+@media all and (min-width: 576px) {
+  /* Landing Image */
+  .landing-inner {
+    width: 435px;
+    top: 529px;
+  }
+
+  .landing-inner .line {
+    left: 80px;
+  }
+
+  .about {
+    margin-top: 249px;
+  }
+
+  /* About Us */
+  .vision-img,
+  .mission-img,
+  .process-img,
+  .approach-img {
+    height: fit-content;
+    padding-left: 7px;
+  }
+
+  .vision .heading,
+  .mission .heading,
+  .process .heading,
+  .approach .heading {
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .vision .line,
+  .mission .line,
+  .process .line,
+  .approach .line {
+    left: 15%;
+  }
+
+  .vision .content,
+  .mission .content,
+  .process .content,
+  .approach .content {
+    margin: 0 !important;
+    padding: 0 7px 0 0 !important;
+  }
+
+  /* Practice Areas */
+  .awards .arrow {
+    margin-top: 18%;
+  }
+
+  .content .line {
+    margin-left: 22px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 450px;
+  }
+
+  .form-group input {
+    height: 44px;
+  }
+
+  /* Publications */
+  .content .img-cover {
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 138px;
+  }
+
+  .publications-1 {
+    width: 400px;
+  }
+
+  .publications .name {
+    left: 75px;
+    bottom: 20px;
+  }
+
+  .content-1 {
+    margin-left: 70px;
+    width: 176px;
+  }
+
+  .content-2 {
+    margin-left: 45px;
+  }
+
+  .publications-2,
+  .publications-3 {
+    width: inherit;
+  }
+
+  /* Footer */
+  .footer-img {
+    height: 220px;
+  }
 }
