@@ -21,6 +21,10 @@ body {
   color: var(--primary-font-color);
 }
 
+.nav-link {
+  color: #151b54 !important;
+}
+
 /* Header */
 .nav-bg {
   position: fixed;
@@ -666,5 +670,178 @@ body {
   /* Footer */
   .footer-img {
     height: 220px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  /* Header */
+  .larger-screens {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  /* Header */
+  .smaller-screens {
+    display: none;
+  }
+
+  .nav-bg {
+    height: 157px;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .collapse {
+    margin-top: 105px;
+  }
+
+  .collapse ul {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Landing Image */
+  .landing {
+    height: 495px;
+  }
+
+  .landing-image {
+    width: 530px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .landing-inner {
+    bottom: 0;
+    left: 29%;
+    top: 240px;
+  }
+
+  .landing-inner .line {
+    width: 100px;
+    left: 16px;
+  }
+
+  .landing-inner .content {
+    padding-left: 16px !important;
+    text-align: left;
+  }
+
+  .landing-inner .buttons {
+    padding-left: 16px;
+    display: flex;
+  }
+
+  .landing-inner .navigator {
+    justify-content: start !important;
+    padding-left: 16px;
+  }
+
+  /* About Us */
+  .about {
+    margin-top: 69px;
+  }
+
+  .about-us .heading {
+    padding-top: 49px !important;
+  }
+
+  .about-us .line {
+    margin-bottom: 25px !important;
+  }
+
+  .about-us .content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .about-us {
+    margin-bottom: 93px !important;
+  }
+
+  .vision,
+  .mission,
+  .approach {
+    margin-bottom: 70px !important;
+  }
+
+  .vision .heading {
+    margin-left: 15px !important;
+  }
+
+  .mission .heading {
+    margin-right: 40px !important;
+  }
+
+  .approach .heading {
+    margin-left: 55px !important;
+  }
+
+  .process .heading {
+    margin-right: 55px !important;
+  }
+
+  .vision .line,
+  .approach .line {
+    width: 100px;
+    left: 82px;
+  }
+
+  .mission .line,
+  .process .line {
+    width: 100px;
+    left: 93%;
+  }
+
+  .mission .content,
+  .process .content {
+    text-align: right !important;
+  }
+
+  .vision-img,
+  .mission-img,
+  .process-img,
+  .approach-img {
+    height: auto;
+    padding-left: 0;
+  }
+
+  .process {
+    margin-bottom: 79px;
+  }
+
+  /* Team */
+  .our-team .heading {
+    padding-top: 100px !important;
+  }
+
+  .our-team .line {
+    margin-bottom: 57px !important;
+  }
+
+  .team .arrow {
+    margin-top: 18%;
+  }
+
+  .team .content {
+    margin-bottom: 94px;
+  }
+
+  .statistics {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .stats {
+    margin-top: 135px !important;
+    margin-bottom: 164px !important;
   }
 }
