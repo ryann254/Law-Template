@@ -340,7 +340,7 @@
             <div class="heading pt-3 pb-1">OUR TEAM</div>
             <div class="line mx-auto mb-3"></div>
           </div>
-          <div class="col-1 arrow">
+          <div class="col-2 col-md-1 arrow">
             <img src="./assets/mobile-images/Arrow-left.png" alt="arrow" class="img-fluid arrow-left">
           </div>
           <div class="content smaller-screens mb-5 mx-auto col-8">
@@ -357,7 +357,7 @@
           </div>
 
           <!-- Larger-screens -->
-          <div class="content mx-auto col-3">
+          <div class="content larger-screens mx-auto col-3">
             <img
               src="./assets/larger-screens/team-2.png"
               alt="team"
@@ -370,7 +370,7 @@
             </div>
           </div>
 
-          <div class="content mx-auto col-3">
+          <div class="content larger-screens mx-auto col-3">
             <img
               src="./assets/mobile-images/Team-1.png"
               alt="team"
@@ -383,7 +383,7 @@
             </div>
           </div>
 
-          <div class="content mx-auto col-3">
+          <div class="content larger-screens mx-auto col-3">
             <img
               src="./assets/larger-screens/team-1.png"
               alt="team"
@@ -395,25 +395,28 @@
               <button class="btn text-white">Message</button>
             </div>
           </div>
-          <div class="col-1 arrow">
+          <div class="col-2 col-md-1 arrow">
             <img src="./assets/mobile-images/Arrow-right.png" alt="arrow" class="img-fluid arrow-left">
           </div>
         </div>
-        <div class="row">
+        <div class="row statistics-row">
+          <div class="statistics-cover"></div>
+          <img src="./assets/larger-screens/cases-won-bg.png" alt="cases" class="img-fluid larger-screens">
+          <img src="./assets/mobile-images/cases-won.png" alt="cases" class="img-fluid smaller-screens">
           <div class="statistics col-12">
-            <div class="stats mt-5">
+            <div class="stats mt-5 mb-5">
               <div class="number">500k+</div>
               <div class="desc">Total Cases Won</div>
             </div>
-            <div class="stats mt-5">
+            <div class="stats mb-5">
               <div class="number">750k</div>
               <div class="desc">Clients</div>
             </div>
-            <div class="stats mt-5">
+            <div class="stats mb-5">
               <div class="number">20</div>
               <div class="desc">Awards</div>
             </div>
-            <div class="stats mt-5 mb-4">
+            <div class="stats mb-5">
               <div class="number">N250b+</div>
               <div class="desc">Recovered</div>
             </div>
@@ -432,22 +435,61 @@
           </div>
           <div class="content mt-4 col-12 mx-auto">
             <div class="family row">
-              <div class="topic col-12 text-left mb-1 ml-sm-2">
+              <div class="topic col-12 text-left mb-1 ml-sm-2 smaller-screens">
                 Family
                 <span class="ml-1"></span>
                 <img src="./assets/mobile-images/Arrow-down.png" alt="arrow" class="img-fluid">
               </div>
-              <!-- <div class="">
-                <img src="" alt="icon" class="img-fluid" />
-              </div> -->
-              <div class="underline col-11 mx-auto mb-4"></div>
-              <div class="line mr-3"></div>
-              <div class="subtopic text-left mb-4">FAMILY AND DIVORCE</div>
-              <div class="sub-content ml-3 pb-3 mr-3 text-left">The beginning and end to a family relationship brings emotional and financial challenges. We are compassionate and creative in our approach. We listen and provide a clear strategy to achieve the best outcome for you and your family.</div>
-              <div class="sub-content ml-3 pb-3 mr-3 text-left">We assist clients from all walks of life and at all stages, whether at the beginning of a relationship and planning a future (for example before a wedding or when relocating to the UK) or at the end of a relationship. Many of our clients or their spouses have international connections, are high net worth individuals or professionals, and may have a public profile.</div>
-              <div class="sub-content ml-3 pb-4 mr-3 text-left">We will work with you in ways that best suit your needs. That may involve us guiding and advising in the background or representing you and fighting your corner in the courts. Regardless of how you want to use our services, we will support you and put you and your family’s interests first.</div>
+
+              <!-- Larger-screens -->
+              <div class="topic larger-screens col-12 text-left">
+                <ul class="d-flex justify-content-around">
+                  <li>Family</li>
+                  <li>Commercial</li>
+                  <li>Criminal</li>
+                  <li>Immigration</li>
+                  <li>Real Estate</li>
+                </ul>
+              </div>
+
+              <div class="underline large-screens"></div>
+              <div class="arrow-down larger-screens">
+                <img src="./assets/mobile-images/Arrow-down.png" alt="arrow" class="img-fluid">
+              </div>
+              <div class="underline line-2 mb-4 col-11 col-md-10 mx-auto"></div>
+              <div class=" col-md-6">
+                <div class="d-flex">
+                  <div class="line mr-3"></div>
+                  <div class="subtopic text-left mb-4">FAMILY AND DIVORCE</div>
+                </div>
+                <div class="sub-content ml-3 pb-3 mr-3 text-left">The beginning and end to a family relationship brings emotional and financial challenges. We are compassionate and creative in our approach. We listen and provide a clear strategy to achieve the best outcome for you and your family.</div>
+                <div class="sub-content ml-3 pb-3 mr-3 text-left">We assist clients from all walks of life and at all stages, whether at the beginning of a relationship and planning a future (for example before a wedding or when relocating to the UK) or at the end of a relationship. Many of our clients or their spouses have international connections, are high net worth individuals or professionals, and may have a public profile.</div>
+                <div class="sub-content ml-3 pb-4 mr-3 text-left">We will work with you in ways that best suit your needs. That may involve us guiding and advising in the background or representing you and fighting your corner in the courts. Regardless of how you want to use our services, we will support you and put you and your family’s interests first.</div>
+              </div>
+              <div class="contact-form mb-4 col-md-6 larger-screens">
+                <div class="heading mb-3 text-left">Request An Appointment</div>
+                <div class="">
+                  <form action="https://formspree.io/mknqyjyr" method="post">
+                      <div class="form-group mb-4">
+                        <input type="text" name="customer_name" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                      </div>
+                      <div class="form-group mb-4">
+                          <input type="email" name="customer_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                      </div>
+                      <div class="form-group mb-4">
+                          <input type="text" name="message_title" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+                      </div>
+                      <div class="form-group mb-4">
+                          <textarea class="form-control" name="customer_message" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                      </div>
+                      <div class="button">
+                          <button type="submit" class="btn text-white">Send Message</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
             </div>
-            <div class="contact-form mb-4">
+            <div class="contact-form mb-4 smaller-screens">
               <div class="heading mb-3 text-left">Request An Appointment</div>
               <div class="">
                 <form action="https://formspree.io/mknqyjyr" method="post">
@@ -470,28 +512,28 @@
                 </div>
             </div>
 
-            <div class="commercial row">
+            <div class="commercial row smaller-screens">
               <div class="topic col-12 text-left mb-1">Commercial
                 <span class="ml-1"></span>
                 <img src="./assets/mobile-images/Arrow-down.png" alt="arrow" class="img-fluid">
               </div>
               <div class="underline col-11 mx-auto mb-4"></div>
             </div>
-            <div class="criminal row">
+            <div class="criminal row smaller-screens">
               <div class="topic col-12 text-left mb-1">Criminal
                 <span class="ml-1"></span>
                 <img src="./assets/mobile-images/Arrow-down.png" alt="arrow" class="img-fluid">
               </div>
               <div class="underline col-11 mx-auto mb-4"></div>
             </div>
-            <div class="immigration row">
+            <div class="immigration row smaller-screens">
               <div class="topic col-12 text-left mb-1">Immigration
                 <span class="ml-1"></span>
                 <img src="./assets/mobile-images/Arrow-down.png" alt="arrow" class="img-fluid">
               </div>
               <div class="underline col-11 mx-auto mb-4"></div>
             </div>
-            <div class="real-estate mb-2 row">
+            <div class="real-estate mb-2 row smaller-screens">
               <div class="topic col-12 text-left mb-1">Real Estate
                 <span class="ml-1"></span>
                 <img src="./assets/mobile-images/Arrow-down.png" alt="arrow" class="img-fluid">
@@ -509,13 +551,21 @@
     <section>
       <div class="container-fluid">
         <div class="awards row">
-          <div class="col-2 arrow">
+          <div class="col-2 col-md-1 arrow">
             <img src="./assets/mobile-images/Arrow-left.png" alt="arrow" class="img-fluid arrow-left">
           </div>
-          <div class="award mx-auto my-auto pt-4 pb-4">
+          <div class="award larger-screens col-md-3 mx-auto  my-auto pt-4 pb-4">
+            <img src="./assets/larger-screens/awards-1.png" alt="awards" class="img-fluid">
+          </div>
+
+          <div class="award col-8 col-md-3 mx-auto my-auto pt-4 pb-4">
             <img src="./assets/mobile-images/awards-2.png" alt="awards" class="img-fluid">
           </div>
-          <div class="col-2 arrow">
+
+          <div class="award larger-screens col-md-3 mx-auto my-auto pt-4 pb-4">
+            <img src="./assets/larger-screens/awards-3.png" alt="awards" class="img-fluid">
+          </div>
+          <div class="col-2 col-md-1 arrow">
             <img src="./assets/mobile-images/Arrow-right.png" alt="arrow" class="img-fluid arrow-left">
           </div>
         </div>
@@ -526,28 +576,51 @@
     <section>
       <div class="container publications">
         <div class="row">
-          <div class="publication mx-auto">
-            <div class="heading pt-3 pb-1">PUBLICATIONS</div>
+          <div class="publication col-md-12 mx-auto">
+            <div class="heading pt-3 pb-1 text-center">PUBLICATIONS</div>
             <div class="line mx-auto mb-3"></div>
           </div>
-          <div class="content mx-auto mb-3">
+          <div class="content smaller-screens mx-auto mb-3">
             <div class="img-cover"></div>
             <img src="./assets/mobile-images/publications-1-cropped.png" alt="publications" class="img-fluid publications-1">
             <div class="text">PUBLIC HEALTH REGULATIONS ON COVID-19</div>
             <div class="name">Josh Hudder</div>
           </div>
           <div class="d-flex">
-            <div class="content content-1">
+            <div class="content content-1 smaller-screens">
               <img src="./assets/mobile-images/publications-2-cropped.png" alt="" class="img-fluid publications-2">
               <div class="sub-content text-left pl-2 pt-2 pb-3">how To Get Away With Murder</div>
               <div class="name-publications pt-2 pl-2">Josh Hudder</div>
             </div>
-            <div class="content content-1 content-2">
+            <div class="content content-1 content-2 smaller-screens">
               <img src="./assets/mobile-images/publications-3.png" alt="" class="img-fluid publications-3 ">
               <div class="sub-content text-left pl-2 pt-2 pb-3">how To Get Away With Murder</div>
               <div class="name-publications pt-2 pl-2 pb-3">Josh Hudder</div>
             </div>
           </div>
+
+          <!-- Larger-screens -->
+          <div class="col-md-8 larger-screens">
+            <div class="content mx-auto mb-3">
+              <div class="img-cover"></div>
+              <img src="./assets/mobile-images/publications-1-cropped.png" alt="publications" class="img-fluid publications-1">
+              <div class="text">PUBLIC HEALTH REGULATIONS ON COVID-19</div>
+              <div class="name">Josh Hudder</div>
+            </div>
+            <div class="content content-3 mx-auto mb-3">
+              <div class="img-cover"></div>
+              <img src="./assets/larger-screens/publications-2-cropped.png" alt="publications" class="img-fluid publications-1">
+              <div class="text">How to get away with murder</div>
+              <div class="name">Josh Hudder</div>
+            </div>
+          </div>
+
+          <div class="content larger-screens content-1 content-2">
+            <img src="./assets/mobile-images/publications-3.png" alt="" class="img-fluid publications-3 ">
+            <div class="sub-content text-left pl-2 pt-2 pb-3">how To Get Away With Murder</div>
+            <div class="name-publications pt-2 pl-2 pb-3">Josh Hudder</div>
+          </div>
+          
           <div class="view-more mx-auto mt-4 mb-4">View More
             <span class="ml-1"></span>
             <img src="./assets/mobile-images/Arrow-down.png" alt="arrow" class="img-fluid view-more-img">
@@ -565,40 +638,40 @@
             <div class="line mx-auto mb-4"></div>
           </div>
           <div class="content col-12">
-            <div class="sub-content col-12">
+            <div class="sub-content sub-content-contact col-12">
               <div class="content-heading pt-3 row justify-content-center">Contact Information</div>
-              <div class="mt-4 row justify-content-center">
+              <div class="mt-4 location-icon row justify-content-center">
                 <img src="./assets/mobile-images/location.png" alt="location" class="img-fluid">
               </div>
-              <div class="row justify-content-center topic mt-2">Address</div>
-              <div class="text-center mt-2">6 Batham Drive, Oriental Bay, Wellignton, New Zealand</div>
-              <div class="text-center mt-2">15 Morningside Rd., Edinburgh, Scotland</div>
-              <div class="text-center mt-2">91 Western Road, Brighton, East Sussex, England</div>
+              <div class="row address-title justify-content-center topic mt-2">Address</div>
+              <div class="text-center address-content mt-2">6 Batham Drive, Oriental Bay, Wellignton, New Zealand</div>
+              <div class="text-center address-content mt-2">15 Morningside Rd., Edinburgh, Scotland</div>
+              <div class="text-center address-content mt-2">91 Western Road, Brighton, East Sussex, England</div>
 
-              <div class="mt-5 row justify-content-center">
+              <div class="mt-5 phone-icon row justify-content-center">
                 <img src="./assets/mobile-images/phone.png" alt="phone" class="img-fluid">
               </div>
-              <div class="row justify-content-center topic mt-2">Phone</div>
-              <div class="text-center mt-2">080123456789</div>
-              <div class="text-center mt-2">080123456789</div>
+              <div class="row phone-title justify-content-center topic mt-2">Phone</div>
+              <div class="text-center phone-content mt-2">080123456789</div>
+              <div class="text-center phone-content mt-2">080123456789</div>
 
-              <div class="mt-5 row justify-content-center">
+              <div class="mt-5 row email-icon justify-content-center">
                 <img src="./assets/mobile-images/email.png" alt="email" class="img-fluid">
               </div>
-              <div class="row justify-content-center topic mt-2">Email</div>
-              <div class="text-center mt-2">info@Franklin&franklin.com</div>
-              <div class="text-center mt-2 pb-4">Contact@Franklin&franklin.com</div>
+              <div class="row email-title justify-content-center topic mt-2">Email</div>
+              <div class="text-center email-content mt-2">info@Franklin&franklin.com</div>
+              <div class="text-center email-content mt-2 pb-4">Contact@Franklin&franklin.com</div>
             </div>
           </div>
-          <div class="contact-form-2 mb-5 col-12">
-            <div class="mt-5 d-flex">
+          <div class="contact-form-2 mb-5 col-12 col-md-6">
+            <div class="mt-5 form-title d-flex">
               <div class="line ml-0 mr-3 mt-2"></div>
               <div class="heading text-left text-white">
                 GET IN TOUCH
               </div>
             </div>
             <div class="text mt-3 text-white">Leave us a message, we’ll get back to you</div>
-            <div class="mt-2 mb-4">
+            <div class="mt-2 form-box mb-4">
               <form action="https://formspree.io/mknqyjyr" method="post">
                 <div class="form-group mb-4">
                   <input type="text" name="customer_name" class="form-control" id="exampleInputPassword1" placeholder="Name">
@@ -627,15 +700,15 @@
       <div class="container-fluid p-0">
         <div class="footer text-white">
           <img src="./assets/mobile-images/Footer.png" alt="footer" class="img-fluid footer-img">
-          <div class="footer-logo">
-            <img src="./assets/mobile-images/Footer-logo.png" alt="footer" class="img-fluid">
-          </div>
-          <div class="footer-text text-center">Copyright 2020 Franklin & Franklin. All Rights Reserved</div>
-          <div class="footer-icons d-flex">
-            <div class="icon mr-3"><img src="./assets/mobile-images/facebook.png" alt="facebook" class="img-fluid"></div>
-            <div class="icon mr-3"><img src="./assets/mobile-images/Instragram.png" alt="instagram" class="img-fluid"></div>
-            <div class="icon"><img src="./assets/mobile-images/Twitter.png" alt="twitter" class="img-fluid"></div>
-          </div>
+            <div class="footer-logo">
+              <img src="./assets/mobile-images/Footer-logo.png" alt="footer" class="img-fluid">
+            </div>
+            <div class="footer-text text-center">Copyright 2020 Franklin & Franklin. All Rights Reserved</div>
+            <div class="footer-icons d-flex">
+              <div class="icon mr-3"><img src="./assets/mobile-images/facebook.png" alt="facebook" class="img-fluid"></div>
+              <div class="icon mr-3"><img src="./assets/mobile-images/Instragram.png" alt="instagram" class="img-fluid"></div>
+              <div class="icon"><img src="./assets/mobile-images/Twitter.png" alt="twitter" class="img-fluid"></div>
+            </div>
         </div>
       </div>
     </footer>

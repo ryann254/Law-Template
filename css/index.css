@@ -210,8 +210,21 @@ body {
   padding: 1px 6px;
 }
 
-.statistics {
+.statistics-row {
+  position: relative;
+}
+
+.statistics-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+  height: 553px;
   background: rgba(21, 27, 84, 0.75);
+}
+
+.statistics {
+  position: absolute;
 }
 
 .stats .number {
@@ -474,6 +487,15 @@ body {
     margin-left: 9px;
   }
 
+  /* Team */
+  .statistics-row img {
+    height: 570px;
+  }
+
+  .statistics-cover {
+    height: 570px;
+  }
+
   /* Footer */
   .footer-logo {
     top: 10px;
@@ -512,6 +534,11 @@ body {
   /* Practice Areas */
   .form-group input {
     height: 37px;
+  }
+
+  /* Team */
+  .statistics-cover {
+    height: 577px;
   }
 
   .form-group input,
@@ -559,6 +586,15 @@ body {
   .form-group input,
   .form-group textarea {
     width: 355px;
+  }
+
+  /* Team */
+  .statistics-row img {
+    width: -webkit-fill-available;
+    height: 570px;
+  }
+  .statistics-cover {
+    height: 570px;
   }
 
   /* Publications */
@@ -815,11 +851,13 @@ body {
   }
 
   .process {
-    margin-bottom: 79px;
+    margin-bottom: 79px !important;
   }
 
   /* Team */
-  .our-team .heading {
+  .our-team .heading,
+  .practice-areas .heading,
+  .publications .heading {
     padding-top: 100px !important;
   }
 
@@ -835,13 +873,237 @@ body {
     margin-bottom: 94px;
   }
 
+  .statistics-row {
+    position: relative;
+  }
+
+  .statistics-row img {
+    height: auto;
+  }
+
+  .statistics-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(21, 27, 84, 0.75);
+    z-index: 5;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+
   .statistics {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    z-index: 6;
   }
 
   .stats {
-    margin-top: 135px !important;
-    margin-bottom: 164px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Practice Areas */
+  .practice .content {
+    margin-top: 74px !important;
+  }
+
+  .topic ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .arrow-down {
+    position: relative;
+    width: 17px;
+  }
+
+  .arrow-down img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .line-2 {
+    margin-left: 0 !important;
+  }
+
+  .practice .col-11 {
+    max-width: 85.666667%;
+  }
+
+  .content .underline {
+    width: 40px;
+    margin-left: 18px;
+    margin-bottom: 69.5px !important;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: -webkit-fill-available;
+  }
+
+  /* Awards */
+  .awards .arrow {
+    margin-top: 10%;
+  }
+
+  .award {
+    padding-top: 115px !important;
+    padding-top: 58px !important;
+  }
+
+  /* Publications */
+  .publication .line {
+    margin-bottom: 56px !important;
+  }
+
+  .content-1,
+  .content-2 {
+    margin-left: 0 !important;
+  }
+
+  .publications-1 {
+    width: -webkit-fill-available;
+  }
+
+  .publications-3 {
+    height: 170px;
+  }
+
+  .content .text {
+    text-transform: uppercase;
+    left: 40%;
+    top: 80px;
+  }
+
+  .content-3 .text {
+    top: 60px;
+  }
+
+  .content .name {
+    left: 30px;
+    bottom: 10px;
+  }
+
+  .content .img-cover {
+    width: 450px;
+    height: 155px;
+  }
+
+  .content-3 .img-cover {
+    height: 136px;
+  }
+
+  .content-2 {
+    height: 310px;
+  }
+
+  .publications .sub-content {
+    padding-top: 39px !important;
+    padding-bottom: 39px !important;
+  }
+
+  .name-publications {
+    padding-top: 0 !important;
+    padding-bottom: 21px !important;
+  }
+
+  /* Contact Us */
+  .contact-us .heading {
+    padding-top: 49px !important;
+  }
+
+  .contact-us .line {
+    margin-bottom: 152px !important;
+  }
+
+  .contact,
+  .sub-content {
+    position: relative;
+  }
+
+  .content-heading,
+  .location-icon,
+  .phone-icon,
+  .email-icon,
+  .email-content,
+  .phone-content,
+  .address-content {
+    text-align: left !important;
+    justify-content: start !important;
+    margin-left: 54px;
+  }
+
+  .email-content,
+  .phone-content,
+  .address-content {
+    margin-left: 88px;
+  }
+
+  .address-content {
+    width: 270px;
+    margin-top: 7px;
+  }
+
+  .address-title,
+  .phone-title,
+  .email-title {
+    position: absolute;
+    left: 15%;
+    top: 13.5%;
+  }
+
+  .phone-title {
+    top: 53%;
+  }
+
+  .email-title {
+    top: 78%;
+  }
+
+  .contact {
+    margin-bottom: 156px;
+  }
+
+  .form-title {
+    margin-top: 72px !important;
+  }
+
+  .form-box {
+    margin-bottom: 75px !important;
+  }
+
+  .contact-form-2 {
+    position: absolute;
+    top: 27%;
+    right: 0;
+  }
+
+  /* Footer */
+  .footer-img {
+    height: 197px;
+  }
+
+  .footer-logo {
+    top: 50%;
+    left: 20%;
+    transform: translate(-80%, -50%);
+  }
+
+  .footer-text {
+    top: 55%;
+    transform: translate(-50%, -45%);
+  }
+
+  .footer-icons {
+    top: 50%;
+    left: 80%;
+    transform: translate(-20%, -50%);
   }
 }
