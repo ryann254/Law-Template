@@ -292,7 +292,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-  width: 315px;
+  width: 300px;
   height: 34px;
   background: var(--primary-bg-color);
   border: 1px solid var(--primary-line-color);
@@ -469,7 +469,7 @@ body {
 
   .form-group input,
   .form-group textarea {
-    width: 295px;
+    width: 260px;
   }
 
   /* Publications */
@@ -543,7 +543,7 @@ body {
 
   .form-group input,
   .form-group textarea {
-    width: 325px;
+    width: 320px;
   }
 
   /* Publications */
@@ -1052,11 +1052,11 @@ body {
   .email-content,
   .phone-content,
   .address-content {
-    margin-left: 88px;
+    margin-left: 79px;
   }
 
   .address-content {
-    width: 270px;
+    width: 255px;
     margin-top: 7px;
   }
 
@@ -1065,15 +1065,15 @@ body {
   .email-title {
     position: absolute;
     left: 15%;
-    top: 13.5%;
+    top: 12.5%;
   }
 
   .phone-title {
-    top: 53%;
+    top: 54%;
   }
 
   .email-title {
-    top: 78%;
+    top: 79%;
   }
 
   .contact {
@@ -1374,6 +1374,19 @@ body {
 }
 
 @media all and (min-width: 1200px) {
+  /* Header */
+  .collapse {
+    margin-bottom: 20px;
+  }
+
+  .navbar-nav {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .nav-item {
+    padding-right: 20px !important;
+  }
   /* Landing Image */
   .landing {
     height: 675px;
@@ -1383,9 +1396,28 @@ body {
     width: 798px;
   }
 
+  /* About Us */
+  .vision .line,
+  .mission .line,
+  .process .line,
+  .approach .line {
+    border: none;
+    height: 5px;
+    background: var(--active-link-color);
+  }
+
   /* Publications */
   .content .underline {
     width: 79px;
+  }
+
+  .content .text {
+    left: 40%;
+    top: 110px !important;
+  }
+
+  .content .name {
+    left: 45px;
   }
 
   /* Contact Us */
@@ -1403,16 +1435,54 @@ body {
   .landing-image {
     width: 898px;
   }
+
+  /* Contact Us */
+  .contact-form-2 {
+    right: 15%;
+  }
 }
 
 @media all and (min-width: 1680px) {
+  /* Header */
+  .navbar-nav {
+    font-size: 28px !important;
+    line-height: 32px !important;
+  }
+
+  .nav-item {
+    padding-right: 30px !important;
+  }
+
   /* Landing Image */
   .landing {
-    height: 875px;
+    height: 800px;
   }
 
   .landing-image {
-    width: 1098px;
+    width: 1020px;
+  }
+
+  .landing-inner {
+    width: 600px;
+  }
+
+  .landing-inner .content,
+  .about-us .content,
+  .vision .content,
+  .mission .content,
+  .approach .content,
+  .process .content,
+  .practice .sub-content,
+  .contact .address-content,
+  .contact .phone-content,
+  .contact .email-content {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  /* Contact Us */
+  .contact-form-2 {
+    right: 21.5%;
   }
 }
 
@@ -1424,5 +1494,26 @@ body {
 
   .landing-image {
     width: 1298px;
+  }
+
+  .landing-inner {
+    width: 700px;
+    height: 370px;
+  }
+
+  .landing-inner .heading {
+    margin-top: 62px;
+  }
+
+  .landing-inner .line {
+    top: 97px;
+    height: 5px;
+    border: none;
+    background: #d99d49;
+  }
+
+  /* Contact Us */
+  .contact-form-2 {
+    right: 25.5%;
   }
 }
