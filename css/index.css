@@ -672,6 +672,15 @@ body {
     height: 44px;
   }
 
+  /* Awards */
+  .award img {
+    width: inherit;
+  }
+
+  .awards .arrow {
+    margin-top: 26%;
+  }
+
   /* Publications */
   .content .img-cover {
     top: 0px;
@@ -758,7 +767,7 @@ body {
   .landing-inner {
     bottom: 0;
     left: 29%;
-    top: 240px;
+    top: auto;
   }
 
   .landing-inner .line {
@@ -1081,7 +1090,7 @@ body {
 
   .contact-form-2 {
     position: absolute;
-    top: 27%;
+    top: 29%;
     right: 0;
   }
 
@@ -1105,5 +1114,315 @@ body {
     top: 50%;
     left: 80%;
     transform: translate(-20%, -50%);
+  }
+}
+
+@media all and (min-width: 992px) {
+  .limit,
+  .statistics {
+    max-width: 1110px;
+  }
+
+  .statistics {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Landing Image */
+  .landing {
+    height: 555px;
+  }
+
+  .landing-image {
+    width: 630px;
+  }
+
+  .landing-inner {
+    width: 534px;
+  }
+
+  .landing-inner .heading {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    padding-right: 50px !important;
+  }
+
+  .landing-inner .line {
+    top: 41px;
+  }
+
+  .landing-inner .content {
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 35px !important;
+    margin-bottom: 28.5px;
+  }
+
+  .buttons {
+    margin-bottom: 36px !important;
+  }
+
+  .buttons .btn {
+    width: 150px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  /* About Us */
+  .about-us {
+    width: 675px;
+  }
+
+  .about-us .heading,
+  .our-team .heading,
+  .practice-areas .heading,
+  .contact-us .heading {
+    font-size: 48px;
+    line-height: 63px;
+  }
+
+  .about-us .line,
+  .our-team .line,
+  .practice-areas .line,
+  .contact-us .line {
+    width: 142px;
+  }
+
+  .about-us .content {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .vision .heading {
+    margin-right: 18% !important;
+    margin-left: 0 !important;
+  }
+
+  .mission .heading,
+  .process .heading {
+    margin-left: 7%;
+    margin-right: 0 !important;
+  }
+
+  .approach .heading {
+    margin-left: 0 !important;
+    margin-right: 7% !important;
+  }
+
+  .vision .content,
+  .mission .content,
+  .approach .content,
+  .process .content,
+  .team .content-title,
+  .practice .sub-content,
+  .contact-form .heading,
+  .contact .address-content,
+  .contact .phone-content,
+  .contact .email-content,
+  .footer .footer-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  /* Team */
+  .team .content-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .content-button .btn {
+    width: 150px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  /* Practice Areas */
+  .practice .topic {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .practice .subtopic {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .contact-form .button {
+    width: 183px;
+    height: 48px;
+  }
+
+  .practice .button button {
+    margin-top: 5px;
+  }
+
+  /* Awards */
+  .awards .arrow {
+    margin-top: 13%;
+  }
+
+  /* Publications */
+  .practice .col-11 {
+    max-width: 89.666667%;
+  }
+
+  .content .underline {
+    width: 59px;
+  }
+
+  .content .img-cover {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+
+  .content-2 {
+    width: 310px;
+    height: 410px;
+  }
+
+  .publications-3 {
+    height: 250px;
+  }
+
+  .content .text {
+    font-size: 28px;
+    line-height: 30px;
+    width: 500px;
+    left: 46%;
+  }
+
+  .content-3 .text {
+    top: 75px;
+  }
+
+  .content .name,
+  .publications .name-publications,
+  .contact .topic,
+  .contact-form-2 .text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .publications .sub-content {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  /* Contact Us */
+  .contact .content-heading {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .address-title,
+  .phone-title,
+  .email-title {
+    left: 12%;
+    top: 15.7%;
+  }
+
+  .phone-title {
+    top: 54%;
+  }
+
+  .email-title {
+    top: 79%;
+  }
+
+  .contact .address-content,
+  .contact .phone-content,
+  .contact .email-content {
+    width: 350px;
+  }
+
+  .contact-form-2 {
+    width: 484px;
+  }
+
+  .contact-form-2 .line {
+    width: 63px;
+    margin-top: 15px !important;
+  }
+
+  .contact-form-2 .heading {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .form-box .button {
+    width: 150px;
+    height: 43px;
+  }
+
+  .form-box .btn {
+    margin-left: 13px;
+  }
+
+  /* Footer */
+  .footer .footer-text {
+    width: auto;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  /* Landing Image */
+  .landing {
+    height: 675px;
+  }
+
+  .landing-image {
+    width: 798px;
+  }
+
+  /* Publications */
+  .content .underline {
+    width: 79px;
+  }
+
+  /* Contact Us */
+  .contact-form-2 {
+    right: 6%;
+  }
+}
+
+@media all and (min-width: 1366px) {
+  /* Landing Image */
+  .landing {
+    height: 735px;
+  }
+
+  .landing-image {
+    width: 898px;
+  }
+}
+
+@media all and (min-width: 1680px) {
+  /* Landing Image */
+  .landing {
+    height: 875px;
+  }
+
+  .landing-image {
+    width: 1098px;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  /* Landing Image */
+  .landing {
+    height: 875px;
+  }
+
+  .landing-image {
+    width: 1298px;
   }
 }
