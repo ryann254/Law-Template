@@ -1490,6 +1490,7 @@ body {
   /* Landing Image */
   .landing {
     height: 875px;
+    max-width: 2100px;
   }
 
   .landing-image {

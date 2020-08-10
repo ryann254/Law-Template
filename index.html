@@ -41,20 +41,20 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav text-center" id="growth">
               <li class="nav-item pr-2 normal">
-                <a class="nav-link nav-active" href="#">Home</a>
+                <a class="nav-link nav-active" id="home" href="#">Home</a>
                 <div class="active-line"></div>
               </li>
               <li class="nav-item pr-2 normal">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" id="about" href="#">About Us</a>
               </li>
               <li class="nav-item pr-2 normal">
-                <a class="nav-link" href="#">Practice Areas</a>
+                <a class="nav-link" id="practice" href="#">Practice Areas</a>
               </li>
               <li class="nav-item pr-2 normal">
-                <a class="nav-link" href="#">Publications</a>
+                <a class="nav-link" id="publications" href="#">Publications</a>
               </li>
               <li class="nav-item normal pr-lg-4">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" id="contact" href="#" id="contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -64,7 +64,7 @@
 
     <!-- Landing Image -->
     <section>
-      <div class="landing">
+      <div class="landing" id="home-section">
         <img
           src="./assets/mobile-images/Landing-image.png"
           alt=""
@@ -114,7 +114,7 @@
 
     <!-- About Us -->
     <section>
-      <div class="container-fluid about text-center">
+      <div class="container-fluid about text-center" id="about-section">
         <div class="row limit mx-auto">
           <div class="about-us mx-auto mb-5">
             <div class="heading pt-3 pb-1">ABOUT US</div>
@@ -427,7 +427,7 @@
 
     <!-- Practice Areas -->
     <section>
-      <div class="container practice text-center">
+      <div class="container practice text-center" id="practice-section">
         <div class="row">
           <div class="practice-areas mx-auto">
             <div class="heading pt-3 pb-1">PRACTICE AREAS</div>
@@ -574,7 +574,7 @@
 
     <!-- Publications -->
     <section>
-      <div class="container publications">
+      <div class="container publications" id="publications-section">
         <div class="row">
           <div class="publication col-md-12 mx-auto">
             <div class="heading pt-3 pb-1 text-center">PUBLICATIONS</div>
@@ -631,7 +631,7 @@
 
     <!-- Contact -->
     <section>
-      <div class="container-fluid contact">
+      <div class="container-fluid contact" id="contact-section">
         <div class="row limit mx-auto">
           <div class="contact-us mx-auto">
             <div class="heading pt-3 pb-1">CONTACT US</div>
@@ -732,6 +732,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
     <!-- Script end -->
   </body>
 </html>
