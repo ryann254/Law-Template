@@ -12,23 +12,38 @@ function scroll(offsetTop) {
   });
 }
 
+function moveLinkColor(event) {
+  $(".nav-link").each(function () {
+    $(this).removeClass("nav-active");
+  });
+  if (event !== undefined) {
+    underline = event.target;
+    $(underline).addClass("nav-active");
+  }
+}
+
 $(document).ready(function () {
   $(".nav-item").click(function (event) {
     event.preventDefault();
     if (event.target.id === "home") {
       let offsetTop = homeSection.offsetTop;
+      moveLinkColor(event);
       scroll(offsetTop);
     } else if (event.target.id === "about") {
       let offsetTop = aboutSection.offsetTop;
+      moveLinkColor(event);
       scroll(offsetTop);
     } else if (event.target.id === "practice") {
       let offsetTop = practiceSection.offsetTop;
+      moveLinkColor(event);
       scroll(offsetTop);
     } else if (event.target.id === "publications") {
       let offsetTop = publicationSection.offsetTop;
+      moveLinkColor(event);
       scroll(offsetTop);
     } else {
       let offsetTop = contactSection.offsetTop;
+      moveLinkColor(event);
       scroll(offsetTop);
     }
   });
